@@ -7,7 +7,7 @@ from django.contrib.auth import get_user_model
 
 class BlogUserManager(BaseUserManager):
     def get_queryset(self):
-        # Exclude soft-deleted users
+     
         return super().get_queryset().filter(is_deleted=False)
 
     def create_user(self, email, password=None, **extra_fields):

@@ -45,7 +45,7 @@ class UpdateUserSerializer(serializers.ModelSerializer):
 
 
 class BlogSerializer(serializers.ModelSerializer):
-    author = serializers.PrimaryKeyRelatedField(queryset=BlogUser.objects.all())  # Use PrimaryKeyRelatedField instead
+    author = serializers.PrimaryKeyRelatedField(queryset=BlogUser.objects.all())  
     
     class Meta:
         model = Blog

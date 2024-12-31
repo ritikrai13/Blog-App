@@ -19,6 +19,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from .models import Blog
 from .serializers import BlogSerializer
+
+#for signup
 class SignupView(APIView):
     permission_classes = [AllowAny]
 
